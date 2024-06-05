@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #6c5ce7;
+}
+
+.login-container {
+    max-width: 420px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 25px 20px 30px;
+}
+
+.login-container h2 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.login-container h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    left: 50%;
+    bottom: -10px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: #1e90ff;
+
+}
+
+.login-container .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+}
+
+.input-fields {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.input-fields-inline label {
+    padding-left: 5px;
+    user-select: none;
+}
+
+.input-fields-inline input {
+    accent-color: #1e90ff;
+}
+
+.input-fields input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 0 35px 0 40px;
+}
+
+.input-fields input:focus {
+    border-color: #a7a3a3;
+}
+
+.input-fields i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #777;
+}
+
+.input-fields i.bx-user,
+.input-fields i.bx-lock-alt {
+    left: 10px;
+}
+
+.input-fields #hideShowBtn {
+    right: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.input-fields input:valid~#hideShowBtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.login-btn {
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #1e90ff;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #1c82e9;
+
+}
